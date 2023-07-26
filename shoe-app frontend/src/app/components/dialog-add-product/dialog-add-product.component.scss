@@ -1,0 +1,14 @@
+.add-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .input-field {
+        width: 500px;
+    }
+    .description {
+        textarea { 
+            height: 180px;
+        }
+    }
+}

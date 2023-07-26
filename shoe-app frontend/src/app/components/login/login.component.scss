@@ -1,0 +1,30 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./../../../assets/images/clouds.jpg);
+    font-family: 'Lobster', cursive;
+
+    &-label {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &-button {
+        align-self: flex-end;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &-input {
+        width: 350px;
+    }
+}

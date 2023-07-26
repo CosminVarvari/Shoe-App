@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+  
+
+<div class="container">
+
+  <div class="row justify-content-center">
+      <div class="col-md-8">
+        <a href="{% url 'showProductsEmp' %}" class="btn btn-primary mt-2">{% trans "Back" %}</a>
+          <div class="card m-5 p-2" style="width: 25rem;">
+              <img src="{{ eachProduct.image.url }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title m-1"><b>{% trans "Name:" %}</b> {{ eachProduct.name }}</h5>
+                  <h4 class="card-subtitle m-1"><b>{% trans "Price:" %}</b> ${{ eachProduct.price }}</h4>
+                  <p style="font-size: 14px;" class="btn btn-warning m-1 p-1">{{ eachProduct.Store.name }}</p>
+                  <hr>
+                  <p style="font-size: 15px;" class="card-text mt-1">{% trans "Description:" %} {{ eachProduct.description }}</p>
+                  <p style="font-size: 13px;" class="cart-text mt-1">added - {{ eachProduct.created_at }}</p>
+                  <a href="{% url 'deleteProduct' eachProduct.id %}" class="btn btn-danger m-1"> {% trans "Delete" %} </a>
+                  <a href="{% url 'updateProduct' eachProduct.id %}" class="btn btn-primary m-1"> {% trans "Update" %} </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+         <div style="margin: 5px padding:2px">
+            <br>
+            <hr>
+
+
+    
+
+         </div>
+      </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

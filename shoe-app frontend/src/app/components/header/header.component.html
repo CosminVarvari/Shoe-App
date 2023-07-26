@@ -1,0 +1,21 @@
+<mat-toolbar class="toolbar">
+  <span class="title">{{'Shoe Store' | translate }}</span>
+  <span class="example-spacer"></span>
+  <div>
+    <span class="language" (click)="selectLanguage('en')">
+      <img src="./../../../assets/images/uk.png" class="flag">
+      <span>en  |  </span>
+    </span>
+    <span class="language" (click)="selectLanguage('fr')">
+      <img src="./../../../assets/images/france.png" class="flag">
+      <span>fr  |  </span>
+    </span>
+    <span class="language" (click)="selectLanguage('ro')">
+      <img src="./../../../assets/images/romania.png" class="flag">
+      <span>ro</span>
+    </span>
+  </div>
+  <button (click)="logout()" mat-icon-button class="logout" aria-label="logout">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>

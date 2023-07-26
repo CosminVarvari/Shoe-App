@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>{{'Delete' | translate}}</h2>
+<mat-dialog-content class="mat-typography">
+  {{'Are you sure you want to delete this?' | translate}}
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>{{'Cancel' | translate}}</button>
+  <button mat-button color="warn" [mat-dialog-close]="true" (click)="onSubmit()" cdkFocusInitial>{{'Delete' | translate}}</button>
+</mat-dialog-actions>

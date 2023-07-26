@@ -1,0 +1,46 @@
+<h2 mat-dialog-title>{{'Edit Product' | translate}}</h2>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="productForm" class="edit-form">
+    <mat-form-field class="input-field">
+      <mat-label for="name">{{'Name' | translate}}</mat-label>
+      <input id="name" type="text" formControlName="name" matInput />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label for="price">{{'Price' | translate}}</mat-label>
+      <input id="price" type="text" formControlName="price" matInput />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label for="producer">{{'Producer' | translate}}</mat-label>
+      <input id="producer" type="text" formControlName="producer" matInput />
+    </mat-form-field>
+    <mat-form-field class="input-field description">
+      <mat-label for="description">{{'Description' | translate}}</mat-label>
+      <textarea
+        id="description"
+        type="text"
+        formControlName="description"
+        matInput
+      ></textarea>
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label for="store">{{'Store' | translate}}</mat-label>
+      <input id="store" type="text" formControlName="store" matInput />
+    </mat-form-field>
+    <div class="input-field">
+      <mat-label for="isAvailable">{{'Availability' | translate}}</mat-label>
+      <mat-checkbox id="isAvailable" formControlName="isAvailable"
+        >{{'Available' | translate}}</mat-checkbox>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>{{'Cancel' | translate}}</button>
+  <button
+    mat-button
+    [mat-dialog-close]="true"
+    (click)="onSubmit()"
+    cdkFocusInitial
+  >
+  {{'Submit' | translate}}
+  </button>
+</mat-dialog-actions>

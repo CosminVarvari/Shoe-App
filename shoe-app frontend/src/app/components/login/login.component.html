@@ -1,0 +1,36 @@
+<div class="login">
+  <form class="login-wrapper">
+    <span class="login-label">Login</span>
+    <mat-form-field class="login-input" appearance="outline">
+      <mat-label>Username</mat-label>
+      <input required [(ngModel)]="username" matInput name="username" />
+      <!-- <mat-hint>Enter Username</mat-hint> -->
+    </mat-form-field>
+    <mat-form-field class="login-input" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input
+        required
+        [(ngModel)]="password"
+        matInput
+        name="password"
+        [type]="show ? 'text' : 'password'"
+      />
+      <mat-icon *ngIf="show === true" (click)="toggleShowPassword()" matSuffix
+        >visibility_off</mat-icon
+      >
+      <mat-icon *ngIf="show === false" (click)="toggleShowPassword()" matSuffix
+        >visibility</mat-icon
+      >
+      <!-- <mat-hint>Enter Username</mat-hint> -->
+    </mat-form-field>
+    <button
+      class="login-button"
+      type="submit"
+      mat-raised-button
+      (click)="login()"
+      color="primary"
+    >
+      Login
+    </button>
+  </form>
+</div>
