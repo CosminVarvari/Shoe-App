@@ -1,0 +1,75 @@
+<div class="products-employee">
+  <div class="products-employee-header">
+    <div class="products-employee-header-title">
+      <span>{{'Products' | translate}}</span>
+      <button (click)="openDialogAdd()" mat-fab color="accent" aria-label="add">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+    <div class="filters">
+      <mat-form-field appearance="fill">
+        <mat-label>{{'Search' | translate}}</mat-label>
+        <input matInput [(ngModel)]="searchValue" />
+        <mat-icon matSuffix>search</mat-icon>
+        <mat-hint>{{'Search for a product' | translate}}</mat-hint>
+      </mat-form-field>
+      <div class="checkbox-wrapper">
+        <mat-checkbox
+          class="checkbox"
+          [(ngModel)]="isAvailable"
+          (change)="filterProducts()"
+          >{{'Available' | translate}}</mat-checkbox
+        >
+      </div>
+      <mat-expansion-panel
+        class="panel"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> {{'Export data' | translate}} </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="panel-content">
+          <a href="http://127.0.0.1:8000/api/products/employee/savecsv"
+            >{{'Export to CSV' | translate}}</a
+          >
+          <a href="http://127.0.0.1:8000/api/products/employee/savetxt"
+            >{{'Export to TXT' | translate}}</a
+          >
+          <a href="http://127.0.0.1:8000/api/products/employee/saveJson"
+            >{{'Export to JSON' | translate}}</a
+          >
+          <a href="http://127.0.0.1:8000/api/products/employee/savexml"
+            >{{'Export to XML' | translate}}</a
+          >
+        </div>
+      </mat-expansion-panel>
+    </div>
+  </div>
+  <div class="products-employee-wrapper">
+    <div
+      *ngFor="
+        let product of currentProducts
+          | filter : 'price' : 'name' : 'producer' : searchValue
+      "
+    >
+      <mat-card class="products-employee-card">
+        <mat-card-header>
+          <mat-card-subtitle>{{ product.producer }}</mat-card-subtitle>
+          <mat-card-title>{{ product.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ product.price | currency : "EUR" }}</p>
+          <p class="restrict-height">{{ product.description }}</p>
+          <mat-divider></mat-divider>
+        </mat-card-content>
+        <mat-card-actions class="align-end">
+          <button (click)="openDialogEdit(product)" mat-button>{{'EDIT' | translate}}</button>
+          <button (click)="openDialogDelete(product)" mat-icon-button>
+            <mat-icon>delete_outline</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

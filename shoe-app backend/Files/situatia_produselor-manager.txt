@@ -1,0 +1,72 @@
+Name: Adidas Originals X
+Store: Store A
+Price: 245.00
+Description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+is_available: True
+created_at: 2023-05-19 13:51:11.709400+00:00
+producer: Adidas
+
+Name: Adidas Originals Z
+Store: Store A
+Price: 320.00
+Description: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+is_available: True
+created_at: 2023-05-19 13:51:40.595584+00:00
+producer: Adidas
+
+Name: Nike Air
+Store: Store A
+Price: 450.00
+Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ante dolor. Aenean ac bibendum quam. In pretium vitae enim ut sodales. Vestibulum ornare sapien et mi ullamcorper, aliquam faucibus augue dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam vitae est mollis tortor ultricies laoreet. Fusce posuere sed felis vitae tincidunt. Etiam quis est urna. Phasellus eget auctor neque, nec faucibus turpis. Vivamus consequat lobortis tincidunt. Praesent ex velit, gravida eget vehicula sit amet, cursus eu metus. In consequat auctor tortor, vitae ultricies ante commodo non. Aenean nec arcu nec est gravida sagittis. Cras sagittis rutrum ipsum, placerat elementum odio dignissim eu. Vestibulum ac velit iaculis, mollis mi id, venenatis augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+is_available: True
+created_at: 2023-05-19 13:52:31.430970+00:00
+producer: Nike
+
+Name: Nike Air Max
+Store: Store B
+Price: 470.00
+Description: Cras porta quam eget fermentum molestie. Phasellus ante nisi, volutpat vel semper et, tempus in felis. Nullam et tincidunt mauris, pharetra congue ligula. Aliquam erat volutpat. Fusce sit amet tincidunt est, vitae blandit felis. Cras maximus mi ut placerat pharetra. Vestibulum lobortis eros nisl, eget laoreet diam semper vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas luctus tortor, sed gravida sem sagittis vitae. Nullam dignissim mi eget eros pellentesque rutrum nec id risus. Vivamus ullamcorper leo turpis, eu dapibus tortor euismod tempor. Nam id nibh venenatis, accumsan velit ullamcorper, accumsan tellus. Suspendisse fringilla, magna eget ultricies ultrices, lorem magna sollicitudin velit, ac luctus erat risus non neque. Quisque nec malesuada augue. Aliquam tempor dolor vel neque iaculis, in egestas mi eleifend. Suspendisse lobortis nulla vitae elit aliquam, laoreet blandit augue vulputate.
+is_available: True
+created_at: 2023-05-19 13:53:01.364402+00:00
+producer: Nike
+
+Name: Dr Martens Combat Boots
+Store: Store A
+Price: 500.00
+Description: Cras eget tortor quis diam sagittis maximus. Nulla ipsum lacus, ultrices non dapibus vitae, suscipit at nisi. Proin laoreet scelerisque massa at cursus. Mauris eleifend quis tellus ut feugiat. Pellentesque varius elit velit, ac posuere quam sodales at. Curabitur scelerisque ligula nunc, id convallis tortor dictum in. Praesent ac nisl molestie metus hendrerit convallis. Cras et volutpat lorem. Mauris auctor ex vitae ipsum placerat, in condimentum justo suscipit. Donec eros est, fringilla sed porttitor ut, sollicitudin ac leo. Morbi varius massa eget purus sollicitudin vestibulum.
+is_available: True
+created_at: 2023-05-19 13:54:18.431982+00:00
+producer: Dr Martens
+
+Name: Dr Martens Blaire Sandals
+Store: Store A
+Price: 320.00
+Description: Phasellus ligula ipsum, faucibus vel sollicitudin eget, mattis sed lectus. Vivamus maximus consequat dolor ut faucibus. Fusce a varius elit. Nam massa dui, euismod a posuere nec, facilisis sed nisl. Pellentesque nec pharetra dolor. Phasellus sed purus et ligula facilisis imperdiet. Sed neque metus, fringilla ut tellus in, ornare placerat risus.
+is_available: True
+created_at: 2023-05-19 13:54:46.427509+00:00
+producer: Dr Martens
+
+Name: Dr Martens Griphon Sandals
+Store: Store B
+Price: 220.00
+Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis, justo sed tincidunt faucibus, tortor lorem molestie turpis, ac ultricies ligula risus mollis leo. Praesent purus ex, pulvinar id venenatis sit amet, commodo ac enim. Sed id laoreet velit. Quisque pulvinar justo elit, sed volutpat massa sodales convallis. Phasellus mattis egestas velit in malesuada. Aliquam ut mauris dapibus, placerat augue ut, viverra est. Nam hendrerit tortor dignissim eros lobortis, sed aliquet sem bibendum. Nam leo eros, feugiat ac odio tincidunt, aliquet imperdiet lacus. Donec lectus neque, facilisis nec ex placerat, condimentum condimentum neque. Donec at ex sem. Donec consectetur, dolor non rutrum mollis, eros velit vulputate lacus, sit amet iaculis turpis orci sed lacus. Nunc id nisi ligula.
+is_available: True
+created_at: 2023-05-19 13:55:26.137181+00:00
+producer: Dr Martens
+
+Name: Puma Blue
+Store: Store A
+Price: 340.00
+Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis, justo sed tincidunt faucibus, tortor lorem molestie turpis, ac ultricies ligula risus mollis leo. Praesent purus ex, pulvinar id venenatis sit amet, commodo ac enim. Sed id laoreet velit. Quisque pulvinar justo elit, sed volutpat massa sodales convallis. Phasellus mattis egestas velit in malesuada. Aliquam ut mauris dapibus, placerat augue ut, viverra est.
+is_available: False
+created_at: 2023-05-19 14:45:22.767282+00:00
+producer: Puma
+
+Name: Vans Old Skool
+Store: Store A
+Price: 353.00
+Description: Nulla ut risus dolor. Curabitur scelerisque venenatis lacus at imperdiet. Mauris orci velit, hendrerit et nunc a, vulputate volutpat magna. Sed quis euismod mauris. Aenean ut massa eget justo pharetra maximus id vel urna. Curabitur iaculis vulputate ipsum. Donec aliquam tempor est et lobortis. Suspendisse nec quam ornare, rhoncus sapien eget, consectetur tortor. Donec accumsan sollicitudin magna, id mollis risus. Praesent et luctus eros. Sed tempus purus nec dictum interdum. Nulla porttitor diam quis iaculis aliquet.
+is_available: True
+created_at: 2023-05-19 16:23:54.639549+00:00
+producer: Vans Off The Wall
+

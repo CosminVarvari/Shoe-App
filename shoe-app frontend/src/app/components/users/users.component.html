@@ -1,0 +1,54 @@
+<app-header></app-header>
+<div class="user">
+  <div class="user-header">
+    <div class="user-header-title">
+      <span>{{'Users' | translate}}</span>
+      <button (click)="openDialogAdd()" mat-fab color="accent" aria-label="add">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+    <div class="filters">
+      <div class="checkbox-wrapper">
+        <mat-checkbox
+          class="checkbox"
+          [(ngModel)]="isEmployee"
+          (change)="filterEmployees()"
+          >{{'Employees' | translate}}</mat-checkbox
+        >
+      </div>
+      <div class="checkbox-wrapper">
+        <mat-checkbox
+          class="checkbox"
+          [(ngModel)]="isManager"
+          (change)="filterManagers()"
+          >{{'Managers' | translate}}</mat-checkbox
+        >
+      </div>
+    </div>
+  </div>
+  <div class="user-wrapper">
+    <div *ngFor="let user of currentUsers">
+      <mat-card class="user-card">
+        <mat-card-header>
+          <mat-card-title
+            >{{ user.first_name }} {{ user.last_name }}</mat-card-title
+          >
+          <mat-card-subtitle>{{ user.username }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <br>
+          <p *ngIf="user.is_employee">{{'Role' | translate}}: {{'Employee' | translate}}</p>
+          <p *ngIf="user.is_manager">{{'Role' | translate}}: {{'Manager' | translate}}</p>
+          <p>{{ user.email }}</p>
+          <p>{{ user.phone_number }}</p>
+        </mat-card-content>
+        <mat-card-actions class="align-end">
+          <button (click)="openDialogEdit(user)" mat-button>{{'EDIT' | translate}}</button>
+          <button (click)="openDialogDelete(user)" mat-icon-button>
+            <mat-icon>delete_outline</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

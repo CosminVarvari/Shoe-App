@@ -1,0 +1,59 @@
+<h2 mat-dialog-title>{{'Edit User' | translate}}</h2>
+<mat-dialog-content class="mat-typography">
+  <form
+    action="https://formsubmit.co/shoe.app.info@gmail.com"
+    method="POST"
+    [formGroup]="userForm"
+    class="edit-form"
+  >
+    <mat-form-field class="input-field">
+      <mat-label for="first_name">{{'First Name' | translate}}</mat-label>
+      <input
+        id="first_name"
+        type="text"
+        formControlName="first_name"
+        matInput
+      />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label for="last_name">{{'Last Name' | translate}}</mat-label>
+      <input id="last_name" type="text" formControlName="last_name" matInput />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label for="email">{{'Email' | translate}}</mat-label>
+      <input id="email" type="text" formControlName="email" matInput />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label for="username">{{'Username' | translate}}</mat-label>
+      <input id="username" type="text" formControlName="username" matInput />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label for="phone_number">{{'Phone Number' | translate}}</mat-label>
+      <input
+        id="phone_number"
+        type="text"
+        formControlName="phone_number"
+        matInput
+      />
+    </mat-form-field>
+    <div class="input-field">
+      <mat-label for="isManager">{{'Manager' | translate}}</mat-label>
+      <mat-checkbox id="isManager" formControlName="isManager"></mat-checkbox>
+    </div>
+    <div class="input-field">
+      <mat-label for="isEmployee">{{'Employee' | translate}}</mat-label>
+      <mat-checkbox id="isEmployee" formControlName="isEmployee"></mat-checkbox>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>{{'Cancel' | translate}}</button>
+  <button
+    mat-button
+    [mat-dialog-close]="true"
+    (click)="onSubmit()"
+    cdkFocusInitial
+  >
+  {{'Submit' | translate}}
+  </button>
+</mat-dialog-actions>
